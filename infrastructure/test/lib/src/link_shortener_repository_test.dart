@@ -1,5 +1,4 @@
 import 'package:domain/domain.dart';
-import 'package:infrastructure/src/shortener/link_shortener_repository.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 import 'package:mockito/annotations.dart';

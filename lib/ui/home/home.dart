@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
               body: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 10), //TODO: Create spacerWidget
+                  const SizedBox(height: 10),
                   ShortenerUrlBox(state),
                   const SizedBox(height: 10),
                   const SizedBox(height: 10),
