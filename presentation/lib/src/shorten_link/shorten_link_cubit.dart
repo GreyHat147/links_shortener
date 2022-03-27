@@ -11,6 +11,8 @@ class ShortenLinkCubit extends Cubit<ShortenLinkState> {
   final IShortenLink shortenLink;
 
   Future<void> shortenUrl(String url) async {
+    if (url.isEmpty) return;
+
     emit(state.copyWith(isLoading: true));
 
     final ShortenedUrl shortenedUrl = await shortenLink(url);
