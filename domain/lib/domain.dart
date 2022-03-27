@@ -3,5 +3,4 @@
 /// More dartdocs go here.
 library domain;
 
-
-// TODO: Export any libraries intended for clients of this package.
+export './src/repositories/repositories.dart';
