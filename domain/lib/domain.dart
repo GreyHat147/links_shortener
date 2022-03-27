@@ -5,3 +5,4 @@ library domain;
 
 export './src/repositories/repositories.dart';
 export './src/entities/entities.dart';
+export './src/use_cases/use_cases.dart';
