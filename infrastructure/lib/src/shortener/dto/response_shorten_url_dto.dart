@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:infrastructure/src/shortener/links_dto.dart';
+import 'package:infrastructure/infrastructure.dart';
 
 part 'response_shorten_url_dto.freezed.dart';
 part 'response_shorten_url_dto.g.dart';
