@@ -4,3 +4,4 @@
 library domain;
 
 export './src/repositories/repositories.dart';
+export './src/entities/entities.dart';

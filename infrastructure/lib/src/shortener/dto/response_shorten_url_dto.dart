@@ -1,3 +1,4 @@
+import 'package:domain/domain.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:infrastructure/infrastructure.dart';
 
@@ -16,4 +17,10 @@ class ResponseShortenUrlDto with _$ResponseShortenUrlDto {
   /// Creates a [ResponseShortenUrlDto] from a JSON
   factory ResponseShortenUrlDto.fromJson(Map<String, dynamic> json) =>
       _$ResponseShortenUrlDtoFromJson(json);
+}
+
+///extension of [PortfolioDbDto] to implement additional methods
+extension ResponseShortenUrlDtoX on ResponseShortenUrlDto {
+  ///Method to convert from ResponseShortenUrlDto object to entity object
+  ShortenedUrl toEntity() => ShortenedUrl(links.short);
 }
