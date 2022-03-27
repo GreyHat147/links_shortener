@@ -11,6 +11,8 @@ environment:
 dependencies:
   dio: ^4.0.4
   mockito: ^5.1.0
+  domain:
+    path: ../domain
   infrastructure:
     path: ../infrastructure
 
