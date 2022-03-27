@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:presentation/presentation.dart';
+import 'package:string_validator/string_validator.dart';
 
 class ShortenerUrlBox extends StatelessWidget {
   ShortenerUrlBox(this.state, {Key? key}) : super(key: key);
@@ -36,6 +37,8 @@ class ShortenerUrlBox extends StatelessWidget {
                   validator: (String? val) {
                     if (val == null || val.isEmpty) {
                       return "Please enter an url";
+                    } else if (!isURL(val)) {
+                      return "Please enter a valid URL";
                     }
                     return null;
                   },
