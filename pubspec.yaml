@@ -41,6 +41,7 @@ dependencies:
   freezed_annotation: ^1.0.0
   json_annotation: ^4.3.0
   flutter_bloc: ^8.0.1
+  flutter_spinkit: ^5.1.0
   data_source:
     path: data_source
   infrastructure:
