@@ -3,6 +3,5 @@
 /// More dartdocs go here.
 library infrastructure;
 
-export 'src/infrastructure_base.dart';
-
+export './src/shortener/shortener.dart';
 // TODO: Export any libraries intended for clients of this package.
