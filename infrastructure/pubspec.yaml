@@ -10,6 +10,7 @@ environment:
 dependencies:
   freezed_annotation: ^1.0.0
   json_annotation: ^4.3.0
+  mockito: ^5.1.0
   domain:
     path: ../domain
 
