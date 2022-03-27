@@ -43,7 +43,11 @@ void main() {
 
       //Assert
 
-      final ShortenedUrl expectedShortenedUrl = ShortenedUrl(linksDto.short);
+      final ShortenedUrl expectedShortenedUrl = ShortenedUrl(
+        alias: "60328",
+        initialUrl: "o",
+        url: "https://url-shortener-nu.herokuapp.com/short/60328",
+      );
       expect(shortenedUrl, expectedShortenedUrl);
     });
   });

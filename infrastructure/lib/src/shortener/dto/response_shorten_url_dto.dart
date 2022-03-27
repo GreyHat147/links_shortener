@@ -22,5 +22,9 @@ class ResponseShortenUrlDto with _$ResponseShortenUrlDto {
 ///extension of [PortfolioDbDto] to implement additional methods
 extension ResponseShortenUrlDtoX on ResponseShortenUrlDto {
   ///Method to convert from ResponseShortenUrlDto object to entity object
-  ShortenedUrl toEntity() => ShortenedUrl(links.short);
+  ShortenedUrl toEntity() => ShortenedUrl(
+        alias: alias,
+        initialUrl: links.self,
+        url: links.short,
+      );
 }

@@ -19,7 +19,10 @@ void main() {
 
       when(repository.shortenUrl(url)).thenAnswer(
         (_) => Future.value(
-          ShortenedUrl(url),
+          ShortenedUrl(
+              url: "https://url-shortener-nu.herokuapp.com/short/1",
+              initialUrl: url,
+              alias: "1"),
         ),
       );
 
@@ -40,7 +43,10 @@ void main() {
 
       when(repository.shortenUrl(url)).thenAnswer(
         (_) => Future.value(
-          ShortenedUrl(url),
+          ShortenedUrl(
+              url: "https://url-shortener-nu.herokuapp.com/short/1",
+              initialUrl: url,
+              alias: "1"),
         ),
       );
 
@@ -48,7 +54,11 @@ void main() {
       final ShortenedUrl shortenedUrl = await shortenLink(url);
 
       //Assert
-      final ShortenedUrl expected = ShortenedUrl(url);
+      final ShortenedUrl expected = ShortenedUrl(
+        url: "https://url-shortener-nu.herokuapp.com/short/1",
+        initialUrl: url,
+        alias: "1",
+      );
       expect(shortenedUrl, expected);
     });
   });

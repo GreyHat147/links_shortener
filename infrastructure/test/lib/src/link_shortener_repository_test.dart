@@ -34,8 +34,11 @@ void main() {
       final ShortenedUrl shortenedUrl = await repository.shortenUrl(url);
 
       //Assert
-      final ShortenedUrl expectedEntity =
-          ShortenedUrl("https://url-shortener-nu.herokuapp.com/short/1");
+      final ShortenedUrl expectedEntity = ShortenedUrl(
+        url: "https://url-shortener-nu.herokuapp.com/short/1",
+        initialUrl: url,
+        alias: "1",
+      );
 
       expect(shortenedUrl, expectedEntity);
     });
