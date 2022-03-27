@@ -12,7 +12,6 @@ void main() {
     group("post", () {
       test("should verify the data", () async {
         //Arrange
-        final url = "https://www.youtube.com";
         String path = "MY_URL";
         final Map<String, dynamic> body = {
           "key": "value",
@@ -42,7 +41,6 @@ void main() {
           "should return the expected response if backend service works properly",
           () async {
         //Arrange
-        final url = "https://www.youtube.com";
         String path = "MY_URL";
         final Map<String, dynamic> body = {
           "key": "value",
